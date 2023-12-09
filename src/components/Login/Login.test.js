@@ -9,9 +9,9 @@ test('Toggling login state', () => {
     const text = screen.getByText(/Log in/i)
     expect(text).toBeInTheDocument();
     fireEvent.click(screen.getByText((/Log in/i)))
-    const updatedState = screen.getByText((/Log out/i))
-    expect(updatedState).toBeInTheDocument()
+    // const updatedState = screen.getByText((/Log out/i))
+    expect(screen.getByText(/Log out/i)).toBeInTheDocument()
     
-})
 
+});
 })
