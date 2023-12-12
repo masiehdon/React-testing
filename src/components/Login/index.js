@@ -1,15 +1,24 @@
 
 
-function Login({login, handleLogin}) {
+function Login({login, handleLogin, handleUserNameInput, userNameInput}) {
    
     
     return (
         <div>
-            {!login ?
+
+            {   !login &&
+                <form>
+                <input type="text" onChange={handleUserNameInput}>
+                </input>
+            </form>}
+        
+            {!login 
+            ?
             <button onClick={handleLogin}>Log in</button>
             : 
             <button onClick={handleLogin}>Log out</button>
             }
+            
         </div>
     )
 }
