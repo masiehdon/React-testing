@@ -31,7 +31,7 @@ function Game() {
             </section>
             <div className="computerChoice choice">
                 <img className="img" alt="figure2" src={computerChoice} />
-                <button onClick={handleRollComputer} className="btn">Let's roll Player 2</button>
+                <button onClick={handleRollComputer} className="btn">Let's roll Player 2n</button>
             </div>
            
             
